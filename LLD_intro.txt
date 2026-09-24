@@ -1,0 +1,37 @@
+HLD = What components does the system need and how do they communicate?
+LLD = How exactly do we implement those components in code?
+
+
+Focus on maintainable , modular , extensible code
+
+
+Oops principles 
+
+
+SOLID principles 
+
+S - SRP - Single responsibility -- it is very subjective we need to decide a point till when we need to divide classes based on single resp.
+
+eg -- suppose there is a order class it can have diff fun validate input , security checks , funds , permission etc for each fun a diff class can be created.
+
+open/close principle --  open for extension and close for modification. if we add a new functionality we dont need to change the entire code base
+
+
+L - LSP = Liskov substitution principle 
+
+A child class should be usable wherever its parent class is expected, without breaking the program's behavior.
+
+In simple words:
+If B is a subclass of A, replacing A with B should not cause unexpected behavior.
+
+Use LSP when designing inheritance hierarchies to ensure derived classes genuinely satisfy the contract/behavior of their base class.
+
+
+ISP -- interface segregation 
+Definition
+A class should not be forced to implement methods it doesn't need.
+
+
+D- dependency inversion -- loose coupling -- high level module should not depend on low level module abstract layer in between.
+
+
