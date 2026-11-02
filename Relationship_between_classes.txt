@@ -1,0 +1,81 @@
+### IS-A Relationship (Inheritance)
+
+An IS-A relationship represents inheritance in OOP. It means one class is a type of another class.
+
+**Examples:**
+- Dog IS-A Animal.
+- Car IS-A Vehicle.
+- Manager IS-A Employee.
+
+**Why is it needed?**
+1. Code Reusability – Reuse properties and methods of the parent class.
+2. Extensibility – Add new child classes easily.
+3. Polymorphism – Use a parent class reference to access different child-class objects.
+
+**Example in C++:**
+```cpp
+class Animal {
+public:
+    void eat() {}
+};
+
+class Dog : public Animal {
+public:
+    void bark() {}
+};
+```
+
+Here, Dog inherits from Animal and can access its eat() method.
+
+**Remember:**
+- IS-A = Inheritance
+- HAS-A = Composition/Association
+
+Use inheritance when a child class genuinely represents a type of its parent class.
+
+
+
+
+
+### HAS-A Relationship (Composition / Aggregation)
+
+A HAS-A relationship represents a relationship where one class contains or uses an object of another class.
+
+**Examples:**
+- Car HAS-A Engine.
+- House HAS-A Room.
+- Library HAS-A Book.
+- Computer HAS-A Processor.
+
+**Why is it needed?**
+1. Code Reusability – Reuse functionality of other classes.
+2. Modularity – Divide a complex system into smaller classes.
+3. Flexibility – Change or replace components without changing the entire system.
+
+**Example in C++:**
+```cpp
+class Engine {
+public:
+    void start() {}
+};
+
+class Car {
+private:
+    Engine engine;
+
+public:
+    void startCar() {
+        engine.start();
+    }
+};
+```
+
+Here, Car HAS-A Engine because the Car class contains an Engine object.
+
+**Types of HAS-A Relationship:**
+1. Composition – Strong ownership. The contained object is considered part of the owner.
+2. Aggregation – Weak ownership. The contained object can exist independently.
+
+**Remember:**
+- IS-A = Inheritance
+- HAS-A = Composition / Aggregation
