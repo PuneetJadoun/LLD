@@ -14,15 +14,25 @@ An IS-A relationship represents inheritance in OOP. It means one class is a type
 
 **Example in C++:**
 ```cpp
+
 class Animal {
+
 public:
-    void eat() {}
+
+&#x20;   void eat() {}
+
 };
 
+
+
 class Dog : public Animal {
+
 public:
-    void bark() {}
+
+&#x20;   void bark() {}
+
 };
+
 ```
 
 Here, Dog inherits from Animal and can access its eat() method.
@@ -54,20 +64,35 @@ A HAS-A relationship represents a relationship where one class contains or uses 
 
 **Example in C++:**
 ```cpp
+
 class Engine {
+
 public:
-    void start() {}
+
+&#x20;   void start() {}
+
 };
+
+
 
 class Car {
+
 private:
-    Engine engine;
+
+&#x20;   Engine engine;
+
+
 
 public:
-    void startCar() {
-        engine.start();
-    }
+
+&#x20;   void startCar() {
+
+&#x20;       engine.start();
+
+&#x20;   }
+
 };
+
 ```
 
 Here, Car HAS-A Engine because the Car class contains an Engine object.
@@ -79,3 +104,20 @@ Here, Car HAS-A Engine because the Car class contains an Engine object.
 **Remember:**
 - IS-A = Inheritance
 - HAS-A = Composition / Aggregation
+
+
+
+UML
+
+A ------> B  A  "is a" B  -- Inheritance
+
+A <>---B  A "has a" B -- Aggregation -- can exist
+
+A <>-- A "has" B  can't exist without part A "part of" -- composition
+
+A-----B  both A and B can call each other  -- bidirectional association
+
+A ---->B    A can call B but B can't call A       unidirectional association
+
+A .....> B Implements
+ 
