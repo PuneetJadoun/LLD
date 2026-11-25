@@ -120,4 +120,35 @@ A-----B  both A and B can call each other  -- bidirectional association
 A ---->B    A can call B but B can't call A       unidirectional association
 
 A .....> B Implements
+
+
+KISS – Keep It Simple, Stupid
+- Keep code simple and easy to understand.
+- Avoid unnecessary complexity and overengineering.
+- Makes code easier to debug and maintain.
+- Example: Prefer a simple function over complicated nested conditions.
+
+YAGNI – You Aren't Gonna Need It
+- Don't implement features until they are actually required.
+- Avoid building functionality based on assumptions about future needs.
+- Saves development time and reduces unnecessary code.
+- Example: Don't build video calling if the application doesn't need it.
+
+DRY – Don't Repeat Yourself
+- Avoid duplicating the same logic throughout the codebase.
+- Extract common functionality into reusable functions, classes, or modules.
+- Makes maintenance easier and reduces inconsistencies.
+- Example: Create one reusable function instead of repeating the same calculation.
+
+QUICK REVISION:
+KISS  = Simplicity
+YAGNI = Necessity
+DRY   = Reusability
+
+
+Design patterns are reusable, proven solutions to commonly occurring software design problems.
+
+Instead of solving a common design problem from scratch every time, we follow an established approach that makes code more maintainable, reusable, and flexible.
+
+Design patterns -- creational , structural , behavioral
  
