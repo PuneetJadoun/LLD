@@ -1,0 +1,44 @@
+# SOLID Principles
+
+**SOLID** is a set of 5 object-oriented design principles that help developers write clean, maintainable, flexible, and reusable code.
+
+### Why do we use SOLID?
+- To make code easier to maintain.
+- To reduce tight coupling.
+- To improve code reusability.
+- To make code easier to extend and test.
+- To avoid complex and rigid code.
+
+### 5 SOLID Principles
+
+1. **S – Single Responsibility Principle (SRP):** A class should have only one responsibility or one reason to change.
+
+2. **O – Open/Closed Principle (OCP):** Software should be open for extension but closed for modification.
+
+3. **L – Liskov Substitution Principle (LSP):** Subclasses should be replaceable with their parent classes without breaking the expected behavior.
+
+4. **I – Interface Segregation Principle (ISP):** Classes should not be forced to implement interfaces they don't need.
+
+5. **D – Dependency Inversion Principle (DIP):** High-level modules should depend on abstractions rather than concrete implementations.
+
+**Goal of SOLID:** To design software that is flexible, scalable, testable, and easy to maintain.
+
+
+
+### Factory Design Pattern
+
+**Definition:** The Factory Design Pattern is a creational design pattern that is used to create objects without exposing the object creation logic to the client. Instead of creating objects directly using `new`, we use a factory class or method to decide which object to create.
+
+**Example:** Suppose we have a notification system that sends Email, SMS, or WhatsApp notifications. Instead of creating these objects directly in our main code, we use a Factory to create the appropriate notification object based on the input.
+
+**Advantages:**
+- Reduces tight coupling between client code and concrete classes.
+- Centralizes object creation logic.
+- Makes code easier to maintain and extend.
+
+**Real-life example:** A notification factory creates Email, SMS, or WhatsApp notification objects based on the requested notification type.
+
+**When to use:** When object creation logic is complex or when the type of object to create depends on input or conditions.
+
+
+
